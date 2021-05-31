@@ -10,9 +10,9 @@ const PhotoContainer = (props) => {
     const results = props.data;
     let pics;
 
-    if (results.length) {
+    if (results.length > 0) {
         pics = results.map(pic => 
-            <Photo url={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`} key={pic.id} />)
+            <Photo url={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`} key={pic.id} />);
     } else{
         pics = <Notfound />
     }
