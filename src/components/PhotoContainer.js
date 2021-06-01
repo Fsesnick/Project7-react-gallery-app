@@ -20,10 +20,13 @@ const PhotoContainer = (props) => {
 //return the photos into the photo containter
 return(
 <div className="photo-container">
+{(props.loading) ? <p>Loading</p> :
+    (!props.data.length && !props.loading) ? <Notfound/> :
     <div>
         <h2> Results: {props.title} </h2>
         <ul> {pics} </ul>
     </div>
+    }
 </div>
 );
 }

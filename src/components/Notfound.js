@@ -1,7 +1,8 @@
 import React from 'react';
 
-//For when the results/page doesn't exist
-
+/** 
+ * @returns A NotFound component for displaying a user-friendly message when the search returns no results.
+ */
 const NotFound = () => (
     <li className='not-found'>
         <h3> Oops! </h3>
