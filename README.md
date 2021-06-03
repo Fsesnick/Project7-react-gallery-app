@@ -1,3 +1,5 @@
+config.js file with the apiKey needed. without that the app won't run
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
